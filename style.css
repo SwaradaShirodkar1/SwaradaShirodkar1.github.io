@@ -1,6 +1,6 @@
 /* General body styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
     margin: 0;
     padding: 0;
@@ -13,16 +13,22 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 header h1 {
     margin: 0;
     font-size: 3rem;
+    font-family: 'Georgia', serif;
+    text-transform: uppercase;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 10px 0 0;
 }
 
 nav ul li {
@@ -44,20 +50,28 @@ nav ul li a:hover {
 section {
     padding: 50px 10%;
     text-align: center;
+    margin-top: 30px;
+}
+
+/* Destination Background Styling */
+.destination-background {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 section h2 {
-    font-size: 2.5rem;
-    color: #333;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0 20px;
 }
 
-.destination-img {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
+/* Information styling */
 .info {
     background-color: #fff;
     padding: 20px;
@@ -71,6 +85,7 @@ section h2 {
 
 .info h3 {
     color: #007bff;
+    font-size: 1.5rem;
 }
 
 .info p {
@@ -88,3 +103,4 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
