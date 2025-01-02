@@ -129,30 +129,4 @@ footer {
     bottom: 0;
 }
 
-/* Back to top button styling */
-.back-to-top {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 15px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 2rem;
-    text-align: center;
-    z-index: 10;
-    text-decoration: none;
-}
-
-.back-to-top:hover {
-    background-color: #0056b3;
-}
-
-body:has(:target) .back-to-top {
-    display: block;
-}
-
 
